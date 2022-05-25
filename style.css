@@ -452,7 +452,6 @@ nav {
 /* FOOTER*/
 .footer-container {
     display: flex;
-    align-items: center;
     justify-content: flex-start;
     flex-wrap: wrap;
     width: 100%;
@@ -474,12 +473,15 @@ li {
     padding-bottom: 10px;
 }
 
-.test1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 500px;
-    overflow: hidden;
+.footer-link {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+
+
 }
 
 /*MEDIA QUERIES*/

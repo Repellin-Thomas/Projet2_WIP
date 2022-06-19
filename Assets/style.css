@@ -2,6 +2,12 @@ html,
 body {
     font-family: Raleway;
     width: 98%;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 2000px;
+    margin: auto;
 }
 
 /*HEADER*/
@@ -14,12 +20,29 @@ main {
     margin-left: 20px;
 }
 
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-arround {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .top-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 
 
 nav {
@@ -29,9 +52,7 @@ nav {
 }
 
 .link-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
     width: 50%;
     padding-bottom: 20px;
     height: 80px;
@@ -68,9 +89,6 @@ nav {
 }
 
 .map-dot {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 50px;
     height: 50px;
     background-color: #F2F2F2;
@@ -97,6 +115,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: none;
     background-color: #0065FC;
     color: white;
     font-weight: 600;
@@ -151,9 +170,7 @@ nav {
 }
 
 .filter-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
     margin-left: -2px;
     border-radius: 25px;
     width: 50px;
@@ -164,9 +181,6 @@ nav {
 }
 
 .filter-text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -225,20 +239,27 @@ nav {
     border-radius: 20px;
     margin-bottom: 15px;
     margin-top: 15px;
+    text-decoration: none;
+    color: black;
 }
 
 .housing-img {
     width: 100%;
     height: 140px;
+    object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
 
-.blue-star {
+.fa-star {
     color: #0065FC;
 }
 
 .grey-star {
     color: #F2F2F2;
+}
+
+.dark-star {
+    color: black;
 }
 
 
@@ -256,12 +277,12 @@ nav {
 }
 
 
-.afficher-plus {
+.display-more {
     width: 100%;
     margin-left: 40px;
 }
 
-.afficher-plus:hover {
+.display-more:hover {
     cursor: pointer;
 }
 
@@ -274,9 +295,6 @@ nav {
 }
 
 .popular-title {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     margin-right: 20px;
     margin-left: 20px;
     margin-bottom: 40px;
@@ -285,9 +303,9 @@ nav {
 
 .popular-cards-container {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
     min-height: 600px;
 
 }
@@ -315,6 +333,7 @@ nav {
 .popular-img {
     width: 40%;
     height: 100%;
+    object-fit: cover;
     border-radius: 20px 0 0 20px;
     min-width: 150px;
 }
@@ -493,6 +512,22 @@ li {
 
     .housing-container {
         margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .popular-container {
+        width: 100%;
+        max-width: 600px;
+        margin: auto;
+    }
+
+    .activities-container {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .activity-card-container {
+        width: 45%;
     }
 
 }
@@ -557,41 +592,51 @@ li {
         margin-left: 0px;
     }
 
-    .afficher-plus {
+    .display-more {
         margin-left: 0px;
     }
 
     .housing-container {
         width: 100%;
         background-color: white;
-
+        margin: auto;
+        align-items: center;
+        justify-content: center;
     }
 
     .housing-cards-container {
-        justify-content: initial;
+        justify-content: center;
+        width: 100%;
+
     }
 
     .housing-card {
         width: 90%;
-        max-width: 320px;
+        max-width: 500px;
         box-shadow: 5px 5px 5px #F2F2F2;
-        margin-right: 40px;
+
 
     }
 
 
     .popular-container {
         width: 100%;
+        margin: auto;
 
     }
 
     .activities-container {
         flex-wrap: wrap;
         height: auto;
+        justify-content: center;
+        margin: auto;
     }
 
     .activity-card-container {
         width: 100%;
+        max-width: 500px;
+        margin: auto;
+
     }
 
     .activity-card-img1 {
